@@ -1,0 +1,322 @@
+[
+  {
+    "problem_id": "PY120-01",
+    "title": "BTL Guinevere - Hồi phục HP",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":95,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[20],\"fn\":\"heal\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-01",
+    "title": "BTL Guinevere - Hồi phục HP",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":35,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[12],\"fn\":\"heal\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":47,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-01",
+    "title": "BTL Guinevere - Hồi phục HP",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":80,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[0],\"fn\":\"heal\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":80,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-01",
+    "title": "BTL Guinevere - Hồi phục HP",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":70,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[30],\"fn\":\"heal\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-02",
+    "title": "BTL Guinevere - Nhận sát thương và hồi sinh",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":60,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[15],\"fn\":\"take_damage\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":45,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-02",
+    "title": "BTL Guinevere - Nhận sát thương và hồi sinh",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":20,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[20],\"fn\":\"take_damage\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":0,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-02",
+    "title": "BTL Guinevere - Nhận sát thương và hồi sinh",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":10,\"level\":2,\"max_hp\":100,\"phoenix\":2,\"remedy\":1},\"steps\":[{\"args\":[30],\"fn\":\"take_damage\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":50,\"level\":2,\"max_hp\":100,\"phoenix\":1,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-02",
+    "title": "BTL Guinevere - Nhận sát thương và hồi sinh",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":5,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[50],\"fn\":\"take_damage\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":0,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-03",
+    "title": "BTL Guinevere - Chiến đấu với Goblin",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":90,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_goblin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":25,\"hp\":76,\"level\":3,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-03",
+    "title": "BTL Guinevere - Chiến đấu với Goblin",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":96,\"hp\":100,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_goblin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":100,\"hp\":96,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-03",
+    "title": "BTL Guinevere - Chiến đấu với Goblin",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":3,\"level\":1,\"max_hp\":100,\"phoenix\":1,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_goblin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":25,\"hp\":50,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-03",
+    "title": "BTL Guinevere - Chiến đấu với Goblin",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":3,\"level\":1,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_goblin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":0,\"level\":1,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-04",
+    "title": "BTL Guinevere - Chiến đấu với Bandit",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":100,\"level\":3,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bandit\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":30,\"hp\":92,\"level\":4,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-04",
+    "title": "BTL Guinevere - Chiến đấu với Bandit",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":5,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bandit\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":0,\"hp\":80,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-04",
+    "title": "BTL Guinevere - Chiến đấu với Bandit",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":8,\"level\":3,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bandit\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":0,\"level\":3,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-04",
+    "title": "BTL Guinevere - Chiến đấu với Bandit",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":8,\"level\":3,\"max_hp\":100,\"phoenix\":1,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bandit\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":30,\"hp\":50,\"level\":4,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-05",
+    "title": "BTL Guinevere - Mở kho báu",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":10,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"take_treasure\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":30,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-05",
+    "title": "BTL Guinevere - Mở kho báu",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":95,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"take_treasure\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":100,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-05",
+    "title": "BTL Guinevere - Mở kho báu",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":100,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"take_treasure\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":100,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-05",
+    "title": "BTL Guinevere - Mở kho báu",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":80,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"take_treasure\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":100,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-06",
+    "title": "BTL Guinevere - Mua Remedy",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":0},\"steps\":[{\"args\":[],\"fn\":\"buy_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":0,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-06",
+    "title": "BTL Guinevere - Mua Remedy",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":14,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":0},\"steps\":[{\"args\":[],\"fn\":\"buy_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":14,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":0},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-06",
+    "title": "BTL Guinevere - Mua Remedy",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":70,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":5},\"steps\":[{\"args\":[],\"fn\":\"buy_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":70,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":5},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-06",
+    "title": "BTL Guinevere - Mua Remedy",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":60,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":4},\"steps\":[{\"args\":[],\"fn\":\"buy_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":45,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":5},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-07",
+    "title": "BTL Guinevere - Sử dụng Remedy",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":50,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"use_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":90,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":0},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-07",
+    "title": "BTL Guinevere - Sử dụng Remedy",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":90,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"use_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":100,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":0},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-07",
+    "title": "BTL Guinevere - Sử dụng Remedy",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":90,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":0},\"steps\":[{\"args\":[],\"fn\":\"use_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":90,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":0},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-07",
+    "title": "BTL Guinevere - Sử dụng Remedy",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":1,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":5},\"steps\":[{\"args\":[],\"fn\":\"use_remedy\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":41,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":4},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-08",
+    "title": "BTL Guinevere - Gặp Merlin",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":70,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"meet_merlin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":80,\"level\":3,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-08",
+    "title": "BTL Guinevere - Gặp Merlin",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":95,\"level\":9,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"meet_merlin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":100,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-08",
+    "title": "BTL Guinevere - Gặp Merlin",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":100,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"meet_merlin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":100,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-08",
+    "title": "BTL Guinevere - Gặp Merlin",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":1,\"level\":1,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"meet_merlin\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":11,\"level\":2,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-09",
+    "title": "BTL Guinevere - Chiến đấu với Troll",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":100,\"level\":4,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_troll\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":40,\"hp\":82,\"level\":5,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-09",
+    "title": "BTL Guinevere - Chiến đấu với Troll",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":100,\"level\":3,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_troll\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":65,\"level\":3,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-09",
+    "title": "BTL Guinevere - Chiến đấu với Troll",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":18,\"level\":4,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_troll\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":0,\"level\":4,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-09",
+    "title": "BTL Guinevere - Chiến đấu với Troll",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":10,\"level\":4,\"max_hp\":100,\"phoenix\":1,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_troll\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":40,\"hp\":50,\"level\":5,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"text_valid\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-10",
+    "title": "BTL Guinevere - Đối đầu Bowser",
+    "case_number": 1,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":40,\"level\":5,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bowser\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":40,\"level\":5,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"returned\":true}]}\n"
+  },
+  {
+    "problem_id": "PY120-10",
+    "title": "BTL Guinevere - Đối đầu Bowser",
+    "case_number": 2,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":100,\"level\":4,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bowser\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":100,\"level\":4,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"returned\":false}]}\n"
+  },
+  {
+    "problem_id": "PY120-10",
+    "title": "BTL Guinevere - Đối đầu Bowser",
+    "case_number": 3,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":39,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bowser\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":39,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"returned\":false}]}\n"
+  },
+  {
+    "problem_id": "PY120-10",
+    "title": "BTL Guinevere - Đối đầu Bowser",
+    "case_number": 4,
+    "visibility": "public",
+    "input": "{\"hero\":{\"gold\":15,\"hp\":100,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"steps\":[{\"args\":[],\"fn\":\"fight_bowser\"}]}\n",
+    "output": "{\"steps\":[{\"hero\":{\"gold\":15,\"hp\":100,\"level\":10,\"max_hp\":100,\"phoenix\":0,\"remedy\":1},\"returned\":true}]}\n"
+  }
+]

@@ -1,0 +1,30 @@
+# ----- GUINEVERE_DISCORD_RUNNER: NOT PART OF STUDENT TODO -----
+def _guinevere_discord_main():
+    import json as _json
+    import sys as _sys
+    case = _json.loads(_sys.stdin.read())
+    hero = case['hero']
+    result = {'steps': []}
+    allowed = {
+        'heal', 'take_damage', 'fight_goblin', 'fight_bandit',
+        'take_treasure', 'buy_remedy', 'use_remedy', 'meet_merlin',
+        'fight_troll', 'fight_bowser'
+    }
+    for step in case['steps']:
+        fn_name = step['fn']
+        if fn_name not in allowed:
+            raise ValueError('Invalid function')
+        returned = globals()[fn_name](hero, *step['args'])
+        entry = {'hero': dict(hero)}
+        if fn_name == 'fight_bowser':
+            # Make None, 0, 1 and strings distinct from strict booleans.
+            entry['returned'] = returned if type(returned) is bool else 'INVALID_BOOL'
+        else:
+            entry['text_valid'] = (isinstance(returned, str) and
+                                   bool(returned.strip()) and
+                                   not returned.lstrip().upper().startswith('TODO'))
+        result['steps'].append(entry)
+    print(_json.dumps(result, ensure_ascii=False, sort_keys=True, separators=(',', ':')))
+
+if __name__ == '__main__':
+    _guinevere_discord_main()
